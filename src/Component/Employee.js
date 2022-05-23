@@ -4,17 +4,7 @@ class Employee extends Component {
     super(props);
     this.state = { name: "", job: "" };
     this.handleChange = this.handleChange.bind(this);
-    //this.handleSubmit = this.handleSubmit.bind(this);
-  }
-  //handleSubmit(event) {
-  //  const { name, job } = this.state;
-  // event.preventDefault();
-  //  alert(`
-  //   _Your Details_\n
-  //        Name : ${name}
-  ////       job :${job}
-  //  `);
-
+    
   handleChange(event) {
     this.setState({
       [event.target.name]: event.target.value
